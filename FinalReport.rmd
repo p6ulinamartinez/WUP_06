@@ -1,7 +1,7 @@
 ---
 title: "GSS challange More Data"
-author: "Put your name here!"
-date: "put the date here"
+author: "Paulina Martinez"
+date: "Fall 2023"
 output: html_document
 ---
 
@@ -29,6 +29,15 @@ mydata <- na.omit(mydata)
 
 Is attitude toward capitol punishment (cappun) independent of race (race)?
 If not, then whose view differs from whom??
+
+$H_0$ There are no significant differences in the data.  
+
+$H_A$ There are differences in the data.
+
+```{r eval=FALSE}
+mydata <- mydata %>%
+mutate(across(where(is.character), as.factor))
+``` 
 
 # Methods
 
